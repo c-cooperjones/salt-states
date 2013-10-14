@@ -2,3 +2,4 @@ base:
   '*':
     - vim
     - git
+    - epel
