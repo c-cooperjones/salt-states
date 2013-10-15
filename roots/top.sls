@@ -1,5 +1,10 @@
 base:
+  'os:CentOS':
+    - match: grain
+    - epel
   '*':
     - vim
     - git
-    - epel
+  'nodename:webserver*':
+    - match: grain 
+    - nginx
