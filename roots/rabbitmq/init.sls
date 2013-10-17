@@ -1,3 +1,3 @@
-nginx:
+rabbitmq-server:
   pkg:
     - installed
