@@ -8,9 +8,10 @@ base:
   'os:(CentOS|RedHat)':
     - match: grain_pcre
     - epel
-  '^(www[0-9]*).(dev).*$':
-    - match: pcre
+#  '^(www[0-9]*).(dev).*$':
+#    - match: pcre
     - nginx
-    - mongodb
-    - rabbitmq
-    - mariadb
+#    - mongodb
+#    - rabbitmq
+#    - mariadb
+    - bind

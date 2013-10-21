@@ -7,7 +7,3 @@ http:
     - connstate: NEW
     - dport: 80
     - proto: tcp
-    - sport: 1025:65535
-    - require:
-      - pkg: nginx
-      - pkg: iptables
