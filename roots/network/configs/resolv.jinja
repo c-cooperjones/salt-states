@@ -1,0 +1,4 @@
+search Home {{grains['domain']}}
+{% for servers in pillar['network'][grains['domain']]['dns_servers'] %}
+nameserver {{servers}}
+{% endfor %}

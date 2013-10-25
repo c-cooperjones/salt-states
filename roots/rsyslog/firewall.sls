@@ -1,9 +1,9 @@
-bind-firewall:
+rsyslog-firewall:
   iptables.append:
     - table: filter
     - chain: INPUT
     - jump: ACCEPT
     - match: state
     - connstate: NEW
-    - dport: 53
-    - proto: udp
+    - dport: 914
+    - proto: tcp

@@ -1,3 +1,5 @@
 base:
   '*':
     - zones
+    - users
+    - network
