@@ -6,4 +6,4 @@ resolv.conf:
     - group: root
     - mode: 644
     - template: jinja
-    
+

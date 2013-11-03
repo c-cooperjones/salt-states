@@ -1,5 +1,5 @@
-sshd:
+{{pillar['services']['sshd']}}:
   service:
     - running
     - require:
-      - pkg: openssh-server
+      - pkg: {{pillar['packages']['sshd']}}

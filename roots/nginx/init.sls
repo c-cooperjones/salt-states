@@ -1,3 +1,4 @@
 include:
   - .package
   - .firewall
+  - .service

@@ -1,3 +1,3 @@
-nginx:
+{{pillar['packages']['nginx']}}:
   pkg:
     - installed

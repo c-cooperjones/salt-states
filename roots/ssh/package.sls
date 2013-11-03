@@ -1,7 +1,7 @@
-openssh-server:
+{{pillar['packages']['sshd']}}:
   pkg:
    - installed
 
-openssh-clients:
+{{pillar['packages']['ssh']}}:
   pkg:
    - installed

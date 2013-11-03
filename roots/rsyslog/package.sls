@@ -1,3 +1,3 @@
-rsyslog:
+{{pillar['packages']['rsyslog']}}:
   pkg:
     - installed

@@ -1,3 +1,3 @@
-vim-enhanced:
+{{pillar['packages']['vim']}}:
   pkg:
    - installed

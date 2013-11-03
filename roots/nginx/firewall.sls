@@ -7,3 +7,4 @@ http:
     - connstate: NEW
     - dport: 80
     - proto: tcp
+    - save: True
