@@ -21,13 +21,14 @@ ruby-deps:
 rails:
   gem.installed:
     - name: rails
-    
-passenger-repo:
-  pkg.installed:
-    - source: http://passenger.stealthymonkeys.com/rhel/6/passenger-release.noarch.rpm
-    
-nginx-passenger:
-  pkg:
-   - insatalled
-   - require:
-     - pkg: nginx-passenger    
+
+passenger:
+  gem.installed:
+    - name: passenger
+
+passenger-nginx:
+  cmd.run:
+    - name: /usr/local/rvm/gems/ruby-1.9.3-p448/bin/passenger-install-nginx-module --auto --prefix=/opt/nginx --auto-download
+    - unless: test -d /opt/nginx
+    - require:
+      - gem: passenger

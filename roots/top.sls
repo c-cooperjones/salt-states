@@ -1,4 +1,15 @@
 base:
+  '*':
+    - vim
+    - git
+    - iptables.clearrules
+    - iptables
+    - users
+    - ssh
+    - rsyslog
+    - emacs
+    - telnet
+    #- network
   'os_family:Debian':
     - match: grain_pcre
     - debconf
@@ -6,21 +17,11 @@ base:
   'os:(CentOS|RedHat)':
     - match: grain_pcre
     - epel
-  '*':
-    - vim
-    - git
-    - emacs
-    - telnet
-    - iptables.clearrules
-    - iptables
-    - users
-    - ssh
-    - rsyslog
-    #- network
   '^(www[0-9]*).(10Goronwy).*$':
     - match: pcre
     - curl
     - rails
+    - nginx.firewall
 #    - nginx
     - mysql
     - mongodb
